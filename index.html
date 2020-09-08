@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Popular Movie Ratings Finder</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+  <h1>Popular Movie Ratings Finder</h1>
+  </header>
+     <div class="group">
+     <article class = "popMovieList">   
+        <div class="item">
+        <h1>Popular Movies list</h1>
+
+        <form id="js-form1">
+           
+            <label for="max-results">Number of Popular Movies</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
+
+            <input type="submit" value="Display!">
+        </form>
+
+        <p id="js-error-message1" class="error-message"></p>
+        <p id="js-error-message3" class="error-message"></p>
+        <p id="js-error-message4" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Search results</h2>
+          <ul id="results-list">
+          </ul>
+          
+        </section>
+          </div>
+     </article>
+     <article class = "ratingList"> 
+        <div class ="item">  
+          <h1>Ratings</h1>
+           <form id="js-form2">
+           
+            <label for="RatingsSearch">Search Movie Ratings</label>
+            <input type="string" name="SearchRate" id="js-searchResults" value="Enter Name">
+
+            <input type="submit" value="Display Ratings!">
+        </form>
+        <p id="js-error-message2" class="error-message"></p>
+          <ul id = "rating-list">
+          </ul>  
+        </div>  
+     </article>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
